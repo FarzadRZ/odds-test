@@ -1,0 +1,21 @@
+.about {
+  background: #fff;
+  padding: 15px;
+  height: 300px;
+  border-radius: 0 0 8px 8px;
+
+  &__title {
+    font-size: $size-large;
+    font-family: $montserrat;
+    font-style: italic;
+    color: $blue-secondary;
+    margin-bottom: 20px;
+  }
+
+  &__description {
+    font-size: $size-small;
+    font-family: $roboto;
+    color: $grey-secondary;
+    line-height: 24px;
+  }
+}

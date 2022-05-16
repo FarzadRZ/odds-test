@@ -1,0 +1,53 @@
+.header {
+  height: 80px;
+  background: $blue-primary;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 30px;
+
+  @include mobile-lg {
+    padding: 15px 20px;
+    height: 55px;
+  }
+
+  &__logo {
+    &-arrow {
+      margin-right: 10px;
+    }
+  }
+
+  &__title {
+    color: #fff;
+    font-family: $montserrat;
+    font-size: $size-large;
+    font-style: italic;
+    display: none;
+
+    @include mobile-lg {
+      display: block;
+    }
+  }
+
+  &__notification {
+    position: relative;
+
+    &-count {
+      width: 18px;
+      height: 18px;
+      border-radius: 50%;
+      border: 2px solid $blue-primary;
+      color: #fff;
+      font-family: $montserrat;
+      font-style: italic;
+      font-size: $size-tiny;
+      background-color: $blue-tertiary;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: absolute;
+      top: 10px;
+      left: 10px;
+    }
+  }
+}

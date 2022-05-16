@@ -1,0 +1,196 @@
+.team {
+  &__title {
+    font-size: $size-large;
+    color: $blue-secondary;
+    font-family: $montserrat;
+    font-style: italic;
+    font-weight: $weight-semibold;
+    text-transform: uppercase;
+    padding: 15px 0;
+  }
+
+  &__search {
+    padding: 0 15px 15px;
+    background: #fff;
+
+    &-box {
+      position: relative;
+      display: flex;
+      align-items: center;
+
+      input {
+        width: 100%;
+        background: #f5f7f9;
+        height: 36px;
+        border-radius: 40px;
+        padding: 0 30px 0 40px;
+        outline: none;
+        font-size: $size-normal;
+
+        &::placeholder {
+          font-size: $size-normal;
+          font-family: $roboto;
+        }
+
+        &:focus-visible {
+          outline: 0;
+        }
+      }
+    }
+
+    &-icon {
+      position: absolute;
+      left: 15px;
+    }
+
+    &-clear {
+      position: absolute;
+      right: 15px;
+      cursor: pointer;
+    }
+  }
+
+  &__result {
+    background: #fff;
+
+    &-item {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 5px 15px;
+
+      &--focused {
+        background: #ccc;
+      }
+    }
+
+    &-detail {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    &-info {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+    }
+
+    &-logo {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      background: $grey-primary;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-right: 15px;
+
+      img {
+        width: 30px;
+      }
+    }
+
+    &-follow {
+      background: $blue-tertiary;
+      border-radius: 40px;
+      color: #fff;
+      font-size: $size-small;
+      padding: 8px 15px;
+      text-transform: uppercase;
+      cursor: pointer;
+      font-weight: $weight-bold;
+    }
+
+    &-name {
+      color: $blue-secondary;
+      font-size: $size-normal;
+      font-family: $roboto;
+      font-weight: 700;
+    }
+  }
+
+  &__league {
+    margin-bottom: 5px;
+
+    span {
+      font-size: $size-small;
+      color: $grey-secondary;
+    }
+  }
+
+  &__name {
+    font-size: $size-normal;
+    font-weight: $weight-bold;
+    color: $blue-secondary;
+    margin-right: 10px;
+    padding-right: 10px;
+    border-right: 1px solid $grey-secondary;
+  }
+
+  &__stadium {
+    font-size: $size-small;
+    color: $grey-secondary;
+
+    img {
+      margin-right: 5px;
+    }
+  }
+
+  &__followed {
+    background: #fff;
+    color: $blue-tertiary;
+    border: 1px solid $blue-tertiary;
+  }
+
+  &__noresult {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 0;
+
+    img {
+      margin-bottom: 10px;
+    }
+
+    p {
+      font-size: $size-small;
+      color: $grey-secondary;
+    }
+  }
+}
+
+.myteam {
+  margin-top: 10px;
+  background: #fff;
+  padding: 0 15px 15px;
+  border-radius: 0 0 8px 8px;
+
+  &__result {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5px 0;
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+
+    &-empty {
+      width: 100%;
+      height: 80px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: $size-normal;
+      color: $grey-secondary;
+      background: $grey-primary;
+      border-radius: 8px;
+    }
+  }
+}

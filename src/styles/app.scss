@@ -1,0 +1,22 @@
+// adding specific font from Google Fonts = " Roboto & Montserrat"
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;1,600;1,700&display=swap");
+
+// importing all the essential stylings from " styles " folder
+
+@import "./core/_reset.scss";
+
+@import "./abstracts/_variables.scss";
+@import "./abstracts/_mixins.scss";
+
+@import "./layout/_header.scss";
+@import "./layout/_main.scss";
+@import "./layout/_footer.scss";
+
+//importing all the components from " styles " folder
+@import "./components/teamsdetail.scss";
+@import "./components/about.scss";
+
+body {
+  background: $grey-primary;
+}
